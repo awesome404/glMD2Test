@@ -25,6 +25,10 @@
 		66BCFC0518F5C29A001C15AF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66BCFBDF18F5C29A001C15AF /* UIKit.framework */; };
 		66BCFC0D18F5C29A001C15AF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66BCFC0B18F5C29A001C15AF /* InfoPlist.strings */; };
 		66BCFC0F18F5C29A001C15AF /* glMD2TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BCFC0E18F5C29A001C15AF /* glMD2TestTests.m */; };
+		66BCFC1D18F5C5CB001C15AF /* MD2Model.cc in Sources */ = {isa = PBXBuildFile; fileRef = 66BCFC1B18F5C5CB001C15AF /* MD2Model.cc */; };
+		66BCFC2B18F5EF02001C15AF /* texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 66BCFC2818F5EF02001C15AF /* texture.png */; };
+		66BCFC2C18F5EF02001C15AF /* texture.tga in Resources */ = {isa = PBXBuildFile; fileRef = 66BCFC2918F5EF02001C15AF /* texture.tga */; };
+		66BCFC2D18F5EF02001C15AF /* tris.md2 in Resources */ = {isa = PBXBuildFile; fileRef = 66BCFC2A18F5EF02001C15AF /* tris.md2 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,16 @@
 		66BCFC0A18F5C29A001C15AF /* glMD2TestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "glMD2TestTests-Info.plist"; sourceTree = "<group>"; };
 		66BCFC0C18F5C29A001C15AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		66BCFC0E18F5C29A001C15AF /* glMD2TestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = glMD2TestTests.m; sourceTree = "<group>"; };
+		66BCFC1A18F5C5CB001C15AF /* MD2Format.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MD2Format.h; path = cc/MD2Format.h; sourceTree = "<group>"; };
+		66BCFC1B18F5C5CB001C15AF /* MD2Model.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MD2Model.cc; path = cc/MD2Model.cc; sourceTree = "<group>"; };
+		66BCFC1C18F5C5CB001C15AF /* MD2Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MD2Model.h; path = cc/MD2Model.h; sourceTree = "<group>"; };
+		66BCFC2118F5EA7B001C15AF /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EAGLView.h; path = old/EAGLView.h; sourceTree = "<group>"; };
+		66BCFC2218F5EA7B001C15AF /* EAGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = EAGLView.mm; path = old/EAGLView.mm; sourceTree = "<group>"; };
+		66BCFC2318F5EA7B001C15AF /* glMD2Test2AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = glMD2Test2AppDelegate.h; path = old/glMD2Test2AppDelegate.h; sourceTree = "<group>"; };
+		66BCFC2418F5EA7B001C15AF /* glMD2Test2AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = glMD2Test2AppDelegate.m; path = old/glMD2Test2AppDelegate.m; sourceTree = "<group>"; };
+		66BCFC2818F5EF02001C15AF /* texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = texture.png; path = md2/texture.png; sourceTree = "<group>"; };
+		66BCFC2918F5EF02001C15AF /* texture.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = texture.tga; path = md2/texture.tga; sourceTree = "<group>"; };
+		66BCFC2A18F5EF02001C15AF /* tris.md2 */ = {isa = PBXFileReference; lastKnownFileType = file; name = tris.md2; path = md2/tris.md2; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +138,8 @@
 		66BCFBE518F5C29A001C15AF /* glMD2Test */ = {
 			isa = PBXGroup;
 			children = (
+				66BCFC1E18F5EA3A001C15AF /* Old Source */,
+				66BCFC2018F5EA5E001C15AF /* MD2 */,
 				66BCFBEE18F5C29A001C15AF /* MD2AppDelegate.h */,
 				66BCFBEF18F5C29A001C15AF /* MD2AppDelegate.m */,
 				66BCFBF118F5C29A001C15AF /* Main.storyboard */,
@@ -132,6 +148,7 @@
 				66BCFBF818F5C29A001C15AF /* MD2ViewController.h */,
 				66BCFBF918F5C29A001C15AF /* MD2ViewController.m */,
 				66BCFBFB18F5C29A001C15AF /* Images.xcassets */,
+				66BCFC2718F5EEEE001C15AF /* M2D Data */,
 				66BCFBE618F5C29A001C15AF /* Supporting Files */,
 			);
 			path = glMD2Test;
@@ -164,6 +181,37 @@
 				66BCFC0B18F5C29A001C15AF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		66BCFC1E18F5EA3A001C15AF /* Old Source */ = {
+			isa = PBXGroup;
+			children = (
+				66BCFC2118F5EA7B001C15AF /* EAGLView.h */,
+				66BCFC2218F5EA7B001C15AF /* EAGLView.mm */,
+				66BCFC2318F5EA7B001C15AF /* glMD2Test2AppDelegate.h */,
+				66BCFC2418F5EA7B001C15AF /* glMD2Test2AppDelegate.m */,
+			);
+			name = "Old Source";
+			sourceTree = "<group>";
+		};
+		66BCFC2018F5EA5E001C15AF /* MD2 */ = {
+			isa = PBXGroup;
+			children = (
+				66BCFC1A18F5C5CB001C15AF /* MD2Format.h */,
+				66BCFC1C18F5C5CB001C15AF /* MD2Model.h */,
+				66BCFC1B18F5C5CB001C15AF /* MD2Model.cc */,
+			);
+			name = MD2;
+			sourceTree = "<group>";
+		};
+		66BCFC2718F5EEEE001C15AF /* M2D Data */ = {
+			isa = PBXGroup;
+			children = (
+				66BCFC2818F5EF02001C15AF /* texture.png */,
+				66BCFC2918F5EF02001C15AF /* texture.tga */,
+				66BCFC2A18F5EF02001C15AF /* tris.md2 */,
+			);
+			name = "M2D Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +262,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Nullriver;
 				TargetAttributes = {
+					66BCFBD718F5C29A001C15AF = {
+						DevelopmentTeam = S9LXU4668P;
+					};
 					66BCFC0018F5C29A001C15AF = {
 						TestTargetID = 66BCFBD718F5C29A001C15AF;
 					};
@@ -245,7 +296,10 @@
 			files = (
 				66BCFBF718F5C29A001C15AF /* Shader.vsh in Resources */,
 				66BCFBFC18F5C29A001C15AF /* Images.xcassets in Resources */,
+				66BCFC2C18F5EF02001C15AF /* texture.tga in Resources */,
+				66BCFC2D18F5EF02001C15AF /* tris.md2 in Resources */,
 				66BCFBF518F5C29A001C15AF /* Shader.fsh in Resources */,
+				66BCFC2B18F5EF02001C15AF /* texture.png in Resources */,
 				66BCFBEA18F5C29A001C15AF /* InfoPlist.strings in Resources */,
 				66BCFBF318F5C29A001C15AF /* Main.storyboard in Resources */,
 			);
@@ -269,6 +323,7 @@
 				66BCFBF018F5C29A001C15AF /* MD2AppDelegate.m in Sources */,
 				66BCFBEC18F5C29A001C15AF /* main.m in Sources */,
 				66BCFBFA18F5C29A001C15AF /* MD2ViewController.m in Sources */,
+				66BCFC1D18F5C5CB001C15AF /* MD2Model.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,10 +448,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "glMD2Test/glMD2Test-Prefix.pch";
 				INFOPLIST_FILE = "glMD2Test/glMD2Test-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -406,10 +464,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "glMD2Test/glMD2Test-Prefix.pch";
 				INFOPLIST_FILE = "glMD2Test/glMD2Test-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

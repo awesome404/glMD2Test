@@ -45,7 +45,7 @@ void MD2Model::init() {
 }
 
 void MD2Model::free() {
-	int i;
+	size_t i;
 
 	if(_skins) {
 		for(i=0;i<_numSkins;i++) if(_skins[i]) delete[] _skins[i];
@@ -95,7 +95,7 @@ void MD2Model::free() {
 bool MD2Model::loadFromFile(const char *fileName) {
 
 	free();
-	int i; // generic index
+	size_t i; // generic index
 	model_t header;
 
 	FILE *pFile=0;
@@ -125,7 +125,7 @@ bool MD2Model::loadFromFile(const char *fileName) {
 	_numVertices = header.numVertices;
 
 	if((_numSkins = header.numSkins)) {
-		int len;
+		size_t len;
 		char buffer[64];
 
 		_skins = new char*[_numSkins];
@@ -179,7 +179,7 @@ bool MD2Model::loadFromFile(const char *fileName) {
 			return false;
 		}
 
-		int x,bufferSize=0;
+		size_t x,bufferSize=0;
 		for(i=0;i<_numGLCommands;i++) {
 			if(fread(&(_glCommands[i].count),sizeof(int),1,pFile) != 1) {
 				throw "could not read a gl command";
@@ -240,7 +240,7 @@ bool MD2Model::setTextureBytes(const char *targa) {
 	FILE *pFile=fopen(targa,"rb");
 	if(!pFile) return false;
 	
-	int size=(256*256*3);
+	size_t size=(256*256*3);
 	byte *bytes=new byte[size];
 
 	fread(bytes,sizeof(byte),14,pFile);
@@ -249,7 +249,7 @@ bool MD2Model::setTextureBytes(const char *targa) {
 
 	// swap green and blue - stupid tga
 	byte temp;
-	for(int i=0;i<size;i+=3) {
+	for(size_t i=0;i<size;i+=3) {
 		temp=bytes[i+1];
 		bytes[i+1]=bytes[i+2];
 		bytes[i+2]=temp;
@@ -359,7 +359,7 @@ bool MD2Model::setTextureBytes(const char *targa) {
 void MD2Model::glRenderFrame(const int frame) {
 	if((frame<0) || (frame>=_numFrames)) return;
 
-	int i,ii;
+	size_t i,ii;
 	float *t,*v;
 	const frame_t *pFrame=&_frames[frame];
 	glCommand_t *pGLCommand;

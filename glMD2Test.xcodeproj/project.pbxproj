@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		66BCFBDC18F5C29A001C15AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66BCFBDB18F5C29A001C15AF /* Foundation.framework */; };
+		66BCFBDE18F5C29A001C15AF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66BCFBDD18F5C29A001C15AF /* CoreGraphics.framework */; };
+		66BCFBE018F5C29A001C15AF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66BCFBDF18F5C29A001C15AF /* UIKit.framework */; };
+		66BCFBE218F5C29A001C15AF /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66BCFBE118F5C29A001C15AF /* GLKit.framework */; };
+		66BCFBE418F5C29A001C15AF /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66BCFBE318F5C29A001C15AF /* OpenGLES.framework */; };
+		66BCFBEA18F5C29A001C15AF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66BCFBE818F5C29A001C15AF /* InfoPlist.strings */; };
+		66BCFBEC18F5C29A001C15AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BCFBEB18F5C29A001C15AF /* main.m */; };
+		66BCFBF018F5C29A001C15AF /* MD2AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BCFBEF18F5C29A001C15AF /* MD2AppDelegate.m */; };
+		66BCFBF318F5C29A001C15AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66BCFBF118F5C29A001C15AF /* Main.storyboard */; };
+		66BCFBF518F5C29A001C15AF /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 66BCFBF418F5C29A001C15AF /* Shader.fsh */; };
+		66BCFBF718F5C29A001C15AF /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 66BCFBF618F5C29A001C15AF /* Shader.vsh */; };
+		66BCFBFA18F5C29A001C15AF /* MD2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BCFBF918F5C29A001C15AF /* MD2ViewController.m */; };
+		66BCFBFC18F5C29A001C15AF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66BCFBFB18F5C29A001C15AF /* Images.xcassets */; };
+		66BCFC0318F5C29A001C15AF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66BCFC0218F5C29A001C15AF /* XCTest.framework */; };
+		66BCFC0418F5C29A001C15AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66BCFBDB18F5C29A001C15AF /* Foundation.framework */; };
+		66BCFC0518F5C29A001C15AF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66BCFBDF18F5C29A001C15AF /* UIKit.framework */; };
+		66BCFC0D18F5C29A001C15AF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66BCFC0B18F5C29A001C15AF /* InfoPlist.strings */; };
+		66BCFC0F18F5C29A001C15AF /* glMD2TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BCFC0E18F5C29A001C15AF /* glMD2TestTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		66BCFC0618F5C29A001C15AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66BCFBD018F5C29A001C15AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66BCFBD718F5C29A001C15AF;
+			remoteInfo = glMD2Test;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		66BCFBD818F5C29A001C15AF /* glMD2Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = glMD2Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		66BCFBDB18F5C29A001C15AF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		66BCFBDD18F5C29A001C15AF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		66BCFBDF18F5C29A001C15AF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		66BCFBE118F5C29A001C15AF /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		66BCFBE318F5C29A001C15AF /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		66BCFBE718F5C29A001C15AF /* glMD2Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "glMD2Test-Info.plist"; sourceTree = "<group>"; };
+		66BCFBE918F5C29A001C15AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		66BCFBEB18F5C29A001C15AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		66BCFBED18F5C29A001C15AF /* glMD2Test-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "glMD2Test-Prefix.pch"; sourceTree = "<group>"; };
+		66BCFBEE18F5C29A001C15AF /* MD2AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MD2AppDelegate.h; sourceTree = "<group>"; };
+		66BCFBEF18F5C29A001C15AF /* MD2AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MD2AppDelegate.m; sourceTree = "<group>"; };
+		66BCFBF218F5C29A001C15AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		66BCFBF418F5C29A001C15AF /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
+		66BCFBF618F5C29A001C15AF /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
+		66BCFBF818F5C29A001C15AF /* MD2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MD2ViewController.h; sourceTree = "<group>"; };
+		66BCFBF918F5C29A001C15AF /* MD2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MD2ViewController.m; sourceTree = "<group>"; };
+		66BCFBFB18F5C29A001C15AF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		66BCFC0118F5C29A001C15AF /* glMD2TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = glMD2TestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66BCFC0218F5C29A001C15AF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		66BCFC0A18F5C29A001C15AF /* glMD2TestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "glMD2TestTests-Info.plist"; sourceTree = "<group>"; };
+		66BCFC0C18F5C29A001C15AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		66BCFC0E18F5C29A001C15AF /* glMD2TestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = glMD2TestTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66BCFBD518F5C29A001C15AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66BCFBE418F5C29A001C15AF /* OpenGLES.framework in Frameworks */,
+				66BCFBDE18F5C29A001C15AF /* CoreGraphics.framework in Frameworks */,
+				66BCFBE018F5C29A001C15AF /* UIKit.framework in Frameworks */,
+				66BCFBE218F5C29A001C15AF /* GLKit.framework in Frameworks */,
+				66BCFBDC18F5C29A001C15AF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66BCFBFE18F5C29A001C15AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66BCFC0318F5C29A001C15AF /* XCTest.framework in Frameworks */,
+				66BCFC0518F5C29A001C15AF /* UIKit.framework in Frameworks */,
+				66BCFC0418F5C29A001C15AF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		66BCFBCF18F5C29A001C15AF = {
+			isa = PBXGroup;
+			children = (
+				66BCFBE518F5C29A001C15AF /* glMD2Test */,
+				66BCFC0818F5C29A001C15AF /* glMD2TestTests */,
+				66BCFBDA18F5C29A001C15AF /* Frameworks */,
+				66BCFBD918F5C29A001C15AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		66BCFBD918F5C29A001C15AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66BCFBD818F5C29A001C15AF /* glMD2Test.app */,
+				66BCFC0118F5C29A001C15AF /* glMD2TestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66BCFBDA18F5C29A001C15AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66BCFBDB18F5C29A001C15AF /* Foundation.framework */,
+				66BCFBDD18F5C29A001C15AF /* CoreGraphics.framework */,
+				66BCFBDF18F5C29A001C15AF /* UIKit.framework */,
+				66BCFBE118F5C29A001C15AF /* GLKit.framework */,
+				66BCFBE318F5C29A001C15AF /* OpenGLES.framework */,
+				66BCFC0218F5C29A001C15AF /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		66BCFBE518F5C29A001C15AF /* glMD2Test */ = {
+			isa = PBXGroup;
+			children = (
+				66BCFBEE18F5C29A001C15AF /* MD2AppDelegate.h */,
+				66BCFBEF18F5C29A001C15AF /* MD2AppDelegate.m */,
+				66BCFBF118F5C29A001C15AF /* Main.storyboard */,
+				66BCFBF418F5C29A001C15AF /* Shader.fsh */,
+				66BCFBF618F5C29A001C15AF /* Shader.vsh */,
+				66BCFBF818F5C29A001C15AF /* MD2ViewController.h */,
+				66BCFBF918F5C29A001C15AF /* MD2ViewController.m */,
+				66BCFBFB18F5C29A001C15AF /* Images.xcassets */,
+				66BCFBE618F5C29A001C15AF /* Supporting Files */,
+			);
+			path = glMD2Test;
+			sourceTree = "<group>";
+		};
+		66BCFBE618F5C29A001C15AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				66BCFBE718F5C29A001C15AF /* glMD2Test-Info.plist */,
+				66BCFBE818F5C29A001C15AF /* InfoPlist.strings */,
+				66BCFBEB18F5C29A001C15AF /* main.m */,
+				66BCFBED18F5C29A001C15AF /* glMD2Test-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		66BCFC0818F5C29A001C15AF /* glMD2TestTests */ = {
+			isa = PBXGroup;
+			children = (
+				66BCFC0E18F5C29A001C15AF /* glMD2TestTests.m */,
+				66BCFC0918F5C29A001C15AF /* Supporting Files */,
+			);
+			path = glMD2TestTests;
+			sourceTree = "<group>";
+		};
+		66BCFC0918F5C29A001C15AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				66BCFC0A18F5C29A001C15AF /* glMD2TestTests-Info.plist */,
+				66BCFC0B18F5C29A001C15AF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66BCFBD718F5C29A001C15AF /* glMD2Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66BCFC1218F5C29A001C15AF /* Build configuration list for PBXNativeTarget "glMD2Test" */;
+			buildPhases = (
+				66BCFBD418F5C29A001C15AF /* Sources */,
+				66BCFBD518F5C29A001C15AF /* Frameworks */,
+				66BCFBD618F5C29A001C15AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glMD2Test;
+			productName = glMD2Test;
+			productReference = 66BCFBD818F5C29A001C15AF /* glMD2Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		66BCFC0018F5C29A001C15AF /* glMD2TestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66BCFC1518F5C29A001C15AF /* Build configuration list for PBXNativeTarget "glMD2TestTests" */;
+			buildPhases = (
+				66BCFBFD18F5C29A001C15AF /* Sources */,
+				66BCFBFE18F5C29A001C15AF /* Frameworks */,
+				66BCFBFF18F5C29A001C15AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66BCFC0718F5C29A001C15AF /* PBXTargetDependency */,
+			);
+			name = glMD2TestTests;
+			productName = glMD2TestTests;
+			productReference = 66BCFC0118F5C29A001C15AF /* glMD2TestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66BCFBD018F5C29A001C15AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MD2;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Nullriver;
+				TargetAttributes = {
+					66BCFC0018F5C29A001C15AF = {
+						TestTargetID = 66BCFBD718F5C29A001C15AF;
+					};
+				};
+			};
+			buildConfigurationList = 66BCFBD318F5C29A001C15AF /* Build configuration list for PBXProject "glMD2Test" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 66BCFBCF18F5C29A001C15AF;
+			productRefGroup = 66BCFBD918F5C29A001C15AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66BCFBD718F5C29A001C15AF /* glMD2Test */,
+				66BCFC0018F5C29A001C15AF /* glMD2TestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66BCFBD618F5C29A001C15AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66BCFBF718F5C29A001C15AF /* Shader.vsh in Resources */,
+				66BCFBFC18F5C29A001C15AF /* Images.xcassets in Resources */,
+				66BCFBF518F5C29A001C15AF /* Shader.fsh in Resources */,
+				66BCFBEA18F5C29A001C15AF /* InfoPlist.strings in Resources */,
+				66BCFBF318F5C29A001C15AF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66BCFBFF18F5C29A001C15AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66BCFC0D18F5C29A001C15AF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66BCFBD418F5C29A001C15AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66BCFBF018F5C29A001C15AF /* MD2AppDelegate.m in Sources */,
+				66BCFBEC18F5C29A001C15AF /* main.m in Sources */,
+				66BCFBFA18F5C29A001C15AF /* MD2ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66BCFBFD18F5C29A001C15AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66BCFC0F18F5C29A001C15AF /* glMD2TestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		66BCFC0718F5C29A001C15AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66BCFBD718F5C29A001C15AF /* glMD2Test */;
+			targetProxy = 66BCFC0618F5C29A001C15AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		66BCFBE818F5C29A001C15AF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66BCFBE918F5C29A001C15AF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		66BCFBF118F5C29A001C15AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66BCFBF218F5C29A001C15AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		66BCFC0B18F5C29A001C15AF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66BCFC0C18F5C29A001C15AF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		66BCFC1018F5C29A001C15AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		66BCFC1118F5C29A001C15AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66BCFC1318F5C29A001C15AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "glMD2Test/glMD2Test-Prefix.pch";
+				INFOPLIST_FILE = "glMD2Test/glMD2Test-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		66BCFC1418F5C29A001C15AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "glMD2Test/glMD2Test-Prefix.pch";
+				INFOPLIST_FILE = "glMD2Test/glMD2Test-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		66BCFC1618F5C29A001C15AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/glMD2Test.app/glMD2Test";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "glMD2Test/glMD2Test-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "glMD2TestTests/glMD2TestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		66BCFC1718F5C29A001C15AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/glMD2Test.app/glMD2Test";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "glMD2Test/glMD2Test-Prefix.pch";
+				INFOPLIST_FILE = "glMD2TestTests/glMD2TestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66BCFBD318F5C29A001C15AF /* Build configuration list for PBXProject "glMD2Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66BCFC1018F5C29A001C15AF /* Debug */,
+				66BCFC1118F5C29A001C15AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66BCFC1218F5C29A001C15AF /* Build configuration list for PBXNativeTarget "glMD2Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66BCFC1318F5C29A001C15AF /* Debug */,
+				66BCFC1418F5C29A001C15AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		66BCFC1518F5C29A001C15AF /* Build configuration list for PBXNativeTarget "glMD2TestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66BCFC1618F5C29A001C15AF /* Debug */,
+				66BCFC1718F5C29A001C15AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 66BCFBD018F5C29A001C15AF /* Project object */;
+}
